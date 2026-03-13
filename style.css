@@ -211,6 +211,11 @@ nav{
 i{
     font-size:16px;
 }
+.text-btn .btn a{
+    font-size:16px;
+    text-decoration: none;
+    color:white;
+}
 
 
 /*------social-icons----------*/
@@ -680,7 +685,7 @@ footer{
         align-items:center;
         background:rgba(250,250,250,0.7);
         backdrop-filter: blur(5px);
-        width:300px;
+        width:250px;
         border-radius:0px 30px 0px 30px;
         min-height:450px;
         height:100vh;
