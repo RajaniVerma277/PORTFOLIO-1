@@ -60,7 +60,7 @@
                         <p>My name is Rajani! I, am a web developer</p>
                     </div>
                     <div class="text-btn">
-                        <button class="btn">Hire Me</button>
+                        <button class="btn" id="hire-me">Hire Me</button>
                         <button class="btn"><a href="https://drive.google.com/file/d/1rO9RMBqAU5iX3cIdvO8AOVwSd083NwxN/view?usp=drive_link">Download CV</a><i class="uil uil-file"></i></button>
                     </div>
                     <div class="social_icons">
@@ -92,7 +92,7 @@
                                     <p>My name is Rajani! I am a web developer</p>
                                 
                             </figure>
-                            <button class="about-me-btn">Hire me</button>
+                            <button class="about-me-btn" id="hire-me-second">Hire me</button>
                         </div>
                     </div>
                     <div class="skill">
@@ -169,19 +169,24 @@
                         </div>
                     </div>
                     <div class="col">
+                        <form id="contactForm">
                         <div class="form-control">
                             <div class="form-inputs">
-                                <input type="text" class="input-field" placeholder="your Email" id="input">
-                                <input type="text" class="input-field" placeholder="your Email">
+                                <input type="text" class="input-field" placeholder="your Email" id="email" name="email" required>
+                                <input type="text" class="input-field" placeholder="your phone number" id="phone" name="phone" required>
                             </div>
                             <div class="text-area">
-                                <input type="text" class="input-subject" placeholder="Subject">
-                                <textarea placeholder="Message"></textarea>
+                                <input type="text" class="input-subject" placeholder="Subject" id="subject" name="subject" required>
+                                <textarea placeholder="Message" id="message" name="message" required></textarea>
                             </div>
+                            <!-- <div class="form-button">
+                                <button class="btn" id="contactForm" onclick="sendMessage()">Send <i class="uil uil-message"></i></button>
+                            </div> -->
                             <div class="form-button">
-                                <button class="btn">Send<i class="uil uil-message"></i></button>
+                                <button type="submit" class="btn">Send <i class="uil uil-message"></i></button>
                             </div>
                         </div>
+                        </form>
                     </div>
                 </div>
             </section>
@@ -215,6 +220,8 @@
             </div>
         </footer>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script src="script.js"></script><!------link external js file-------->
 </body>
-<script src="script.js"></script><!------link external js file-------->
+
 </html>
